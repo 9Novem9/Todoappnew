@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoListController;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\historyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +20,9 @@ Route::get('/', function () {
 });
 Route::get('/list', [TodoListController::class, 'index']);
 Route::resource('tasks', TaskController::class);
+
+Route::get('/', function () {
+    return view('index.history.php');
+});
+Route::get('/history', [historyController::class, 'index']);
+Route::resource('history', historyController::class);
