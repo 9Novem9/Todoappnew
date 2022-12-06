@@ -10,7 +10,20 @@ use Illuminate\Support\Facades\Validator;
 class historyController extends Controller
 {
        
- viewhistory.index
+ /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+      $history = tasks::all();
+       
+      return view('history.index', compact('history'));
+      }
  
+
 }
+
+    
 

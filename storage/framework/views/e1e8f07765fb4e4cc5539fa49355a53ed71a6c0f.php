@@ -52,6 +52,12 @@ unset($__errorArgs, $__bag); ?>
                         追加する
                     </button>
                   </div>
+                  </label>
+ 
+ <button type="submit" class="mt-8 p-4 bg-slate-800 text-white w-full max-w-xs hover:bg-slate-900 transition-colors">
+    完了履歴　
+ </button>
+</div>
  
                 </form>
                 <?php if($tasks->isNotEmpty()): ?>
