@@ -19,6 +19,9 @@ return new class extends Migration
             $table->boolean('status')->default(false);
             $table->timestamp('updated_at')->useCurrent()->nullable();
             $table->timestamp('created_at')->useCurrent()->nullable();
+            $table->boolean('kategori')->default(false);
+           
+
         });
     }
 
